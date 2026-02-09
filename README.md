@@ -1,8 +1,8 @@
 # 𝖒𝖔𝖉-𝖉𝖎𝖆𝖇𝖑𝖔-𝖈𝖔𝖗𝖊
 
-[![Platform: AzerothCore](https://img.shields.io/badge/Platform-AzerothCore-blue.svg)](https://www.azerothcore.org)
-[![License: GNU AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-red.svg)](https://github.com/azerothcore/azerothcore-wotlk/blob/master/LICENSE)
-[![Style: ARPG](https://img.shields.io/badge/Style-Diablo--Like-orange.svg)]()
+<p align="center">[![Platform: AzerothCore](https://img.shields.io/badge/Platform-AzerothCore-blue.svg)](https://www.azerothcore.org)</p>
+<p align="center">[![License: GNU AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-red.svg)](https://github.com/azerothcore/azerothcore-wotlk/blob/master/LICENSE)</p>
+<p align="center">[![Style: ARPG](https://img.shields.io/badge/Style-Diablo--Like-orange.svg)]()</p>
 
 <p align="center"><img width="447" height="174" alt="diablocorebanner" src="https://github.com/user-attachments/assets/24885e9d-7749-4057-9642-096a83d31116" />
 </p>

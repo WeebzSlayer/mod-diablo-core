@@ -13,11 +13,12 @@
 
 ---
 
-## 🚧 Work In Progress (WIP)
+<p align="center">## 🚧 Work In Progress (WIP)</p>
 
 ---
 
 ## ✨ Core Features
+
 
 ### ⚔️ Combat & Mechanics
 

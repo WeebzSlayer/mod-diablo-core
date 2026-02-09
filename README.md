@@ -9,7 +9,7 @@
 <p align="center"><img width="447" height="174" alt="diablocorebanner" src="https://github.com/user-attachments/assets/24885e9d-7749-4057-9642-096a83d31116" />
 </p>
 
-*<p align="center">Transforms World of Warcraft into a fast-paced **Action RPG (ARPG)**. This module introduces core Diablo mechanics: increased monster density, scaling potions, AOE cleave logic, and Nephalem Rifts—all while maintaining server performance.</p>*
+*<p align="center">Transforms World of Warcraft into a fast-paced **Action RPG (ARPG)**. This module introduces core Diablo mechanics: increased monster density, scaling potions, AOE cleave logic, and Nephalem Rifts; all while maintaining server performance.</p>*
 
 ---
 

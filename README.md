@@ -1,4 +1,4 @@
-# 𝐃𝐢𝐚𝐛𝐥𝐨 𝐌𝐨𝐝𝐞 𝐌𝐨𝐝𝐮𝐥𝐞 (𝐦𝐨𝐝-𝐝𝐢𝐚𝐛𝐥𝐨-𝐦𝐨𝐝𝐞)
+# 𝐃𝐢𝐚𝐛𝐥𝐨 𝐌𝐨𝐝𝐞 𝐌𝐨𝐝𝐮𝐥𝐞 (𝐦𝐨𝐝-𝐝𝐢𝐚𝐛𝐥𝐨)
 
 ![AzerothCore](https://img.shields.io/badge/AzerothCore-WotLK-blue?style=for-the-badge&logo=c%2B%2B)
 ![License](https://img.shields.io/badge/License-AGPL-red?style=for-the-badge)

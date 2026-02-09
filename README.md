@@ -55,5 +55,4 @@ If you find the server lagging with many players:
 
 ## 📜 Credits
 
-*   **AzerothCore Community:** For the core and inspiration.
-*   **Blizzard:** For the original Diablo concept.
+*   **WeebzSlayer**

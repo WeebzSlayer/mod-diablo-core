@@ -4,7 +4,8 @@
 [![License: GNU AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-red.svg)](https://github.com/azerothcore/azerothcore-wotlk/blob/master/LICENSE)
 [![Style: ARPG](https://img.shields.io/badge/Style-Diablo--Like-orange.svg)]()
 
-<p align="center"><img width="1397" height="664" alt="image" src="https://github.com/user-attachments/assets/a0fa9939-de70-4f14-9217-78270615a23f" /></p>
+<p align="center"><img width="1116" height="433" alt="image" src="https://github.com/user-attachments/assets/932d202b-8791-430c-9ba0-c50f0f8c89ca" />
+</p>
 
 Transforms World of Warcraft into a fast-paced **Action RPG (ARPG)**. This module introduces core Diablo mechanics: increased monster density, scaling potions, AOE cleave logic, and Nephalem Rifts—all while maintaining server performance.
 

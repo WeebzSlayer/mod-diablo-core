@@ -1,82 +1,96 @@
 # 𝐃𝐢𝐚𝐛𝐥𝐨 𝐌𝐨𝐝𝐞 𝐌𝐨𝐝𝐮𝐥𝐞 (𝐦𝐨𝐝-𝐝𝐢𝐚𝐛𝐥𝐨-𝐦𝐨𝐝𝐞)
 
-![AzerothCore](https://img.shields.io/badge/AzerothCore-WotLK-blue?style=for-the-badge&logo=c%2B%2B)
-![License](https://img.shields.io/badge/License-AGPL-red?style=for-the-badge)
-![Module Type](https://img.shields.io/badge/Module-Gameplay-orange?style=for-the-badge)
+[![Platform: AzerothCore](https://img.shields.io/badge/Platform-AzerothCore-blue.svg)](https://www.azerothcore.org)
+[![License: GNU AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-red.svg)](https://github.com/azerothcore/azerothcore-wotlk/blob/master/LICENSE)
+[![Style: ARPG](https://img.shields.io/badge/Style-Diablo--Like-orange.svg)]()
 
-## Diablo Mode Description
-
-This module simulates a **Diablo-like experience** within World of Warcraft. It introduces mechanics such as increased monster density, elite "Champion" spawns, Nephalem Rifts, and scaling ARPG mechanics like Cleave and Percentage-based healing.
-
-**Performance First:** The module is designed with server health in mind. Monster density increases are kept low (0.5% - 0.75%) to prevent lag, and safeguards are in place to prevent infinite spawn loops.
-
-## 🛠️ Installation
-
-1. Place the `mod-diablo-mode` folder into your `azerothcore-wotlk/modules/` directory.
-2. Run **CMake**.
-3. **Compile** the server.
-4. Copy `conf/mod_diablo.conf` to your server's binary config directory (where `worldserver.conf` is) if the install step doesn't handle it automatically for your setup.
-5. Run `creature_template.sql` in your `acore.world`.
-6. Start your server and enjoy!
----
-
-## 🎮 How it works (In-Game)
-
-### 1. 🔥 Density
-As you wander the world, there is a small chance (configurable **0.75%**) that a monster will spawn a copy of itself nearby. 
-*   This keeps the server healthy as it only happens on spawn events and cleans up automatically.
-
-### 2. 💀 Champions
-Randomly (**1%** chance), a monster will spawn much larger, red, with **4x HP** and **2x Damage**.
-
-### 3. 🌀 Rifts
-You can start a rift by typing the following command:
-`.diablo rift start`
-*   Kill **50 enemies** (configurable).
-*   The **"Rift Guardian"** will spawn directly on top of you.
-*   Kill it for loot (standard loot table of that mob ID).
-
-### 4. 🩸 Health Globes
-Killing enemies has a **5% chance** to instantly heal you for **10% of your HP**.
-
-### 5. 🪓 Cleave System (AOE Logic)
-Every time you deal damage, there is a **30% chance** to trigger a Cleave effect.
-*   Deals **50% of the original damage** to all enemies within **8 yards**.
-*   This turns simple spells like *Fireball* or *Sinister Strike* into powerful AOE nukes without needing to edit client-side DBC files.
-
-### 6. 🧪 Potion Overhaul
-Traditional flat-value healing is gone. Super Healing Potions now use **Percentage Scaling**:
-*   Intercepts the spell cast and calculates **35% of your Maximum HP**.
-*   The heal scales with your gear progress, ensuring potions remain relevant at endgame, mimicking the Diablo 3/4 potion mechanic.
-
-### 7. 🧙‍♀️ Adria the Witch
-A custom vendor script that provides the essentials for your journey.
-*   **Spawn Command:** `.diablo adria` (GM Only) or via permanent SQL spawn.
-*   She sells the Super Healing and Mana potions that interact with the custom scaling logic.
-
-### 🏃 Movement Speed
-To capture the fast-paced feel of ARPGs, all players receive a **30% passive movement speed boost** (`MOVE_RUN` set to 1.3f ) automatically upon login.
+Transform World of Warcraft into a fast-paced **Action RPG (ARPG)**. This module introduces core Diablo mechanics: increased monster density, scaling potions, AOE cleave logic, and Nephalem Rifts—all while maintaining server performance.
 
 ---
 
-## 🚀 Further Optimization Tips
+## ✨ Core Features
 
-If you find the server lagging with many players:
+### ⚔️ Combat & Mechanics
+*   **💥 Cleave System (Dynamic AOE):** 
+    *   Every damage-dealing spell or strike has a **30% chance** to trigger a Cleave.
+    *   Deals **50% of the original damage** to all enemies within **8 yards**.
+    *   *Visuals:* Uses in-game spell effects to signify the blast.
+*   **🏃 ARPG Movement:** 
+    *   Players receive a passive **+20% movement speed** boost automatically upon login.
+*   **❤️ Health Globes:** 
+    *   Slain enemies have a **5% chance** to drop a healing surge, instantly restoring **10% of your Maximum HP**.
+*   **🧪 Potion Overhaul:** 
+    *   Traditional flat-value healing is replaced. **Super Healing Potions** restore **35% of your Max HP**.
+    *   Potions scale with your gear progress, ensuring they stay relevant from leveling to endgame.
 
-*   **Lower Density:** Lower `Diablo.Density.Chance` in the config.
-*   **Anti-Hoarding:** The code includes `TEMPSUMMON_TIMED_DESPAWN_OUT_OF_COMBAT` for the Rift Guardian, ensuring boss mobs don't pile up if players run away.
-*   **Recursion Protection:** The density clones use `IsSummon()` checks to ensure they **never** spawn clones of themselves.
+### 👿 Monster & World Scaling
+*   **📈 Dynamic Density:** 
+    *   Monsters have a **25% chance** to spawn a clone (+20-30% density boost).
+    *   **Recursion Protection:** Clones cannot clone themselves, preventing server crashes.
+*   **🌟 Champion Spawns:** 
+    *   Standard mobs have a **5% chance** to spawn as a "Champion."
+    *   Champions have **3x Health**, **1.5x Damage**, and a larger scale (1.3x).
+    *   *Visuals:* Champions are marked with a distinct visual glow/aura.
+
+### 🌌 Nephalem Rifts & Persephone
+*   **Persephone (The Rift Harbinger):** 
+    *   A custom vendor NPC (ID: `99000`) who sells the scaled Super Potions.
+    *   **Rift System:** Talking to her allows players to enter a Nephalem Rift.
+*   **Rift Guardian:** 
+    *   Inside the Rift, players face waves of high-density mobs leading to the **Rift Guardian** (ID: `99001`).
+    *   **Performance Safeguard:** Bosses and Rift mobs use `TEMPSUMMON_TIMED_DESPAWN_OUT_OF_COMBAT` to prevent entity hoarding.
+
+---
+
+## 🚀 Installation
+
+1. **Download the Module :**
+2. **Database Setup :**
+   *  Apply the provided SQL files to your world database in acore.world.
+3. **Run CMake.**
+4. **Compile**
+5. **Configuration :**
+   *  Go to your server etc folder.
+   *  Copy diablo.conf.dist to diablo.conf.
+   *  Edit values to your liking!
+
+---
+
+## ⚙️ Configuration (`diablo.conf`)
+
+| Variable | Default | Description |
+| :--- | :---: | :--- |
+| `Diablo.Enable` | **1** | Toggle the entire module. |
+| `Diablo.MovementSpeed.Boost` | **1.2** | 1.2	1.2 = 20% faster run speed. |
+| `Diablo.Density.Chance` | **25** | Chance (%) for mobs to clone. |
+| `Diablo.Champion.Chance` | **5** | Chance (%) Chance (%) for a mob to be a Champion. |
+| `Diablo.Cleave.Chance` | **30** | Chance (%) for damage to trigger AOE. |
+| `Diablo.Potion.HealPercent` | **35** | % of Max HP restored by Super Potions. |
+
+---
+
+## 🎮 Game Master Commands
+
+   *  Spawn the Rift NPC (Persephone): `.npc add 99000`
+   
+   *  Manually Spawn a Rift Guardian: `.npc add 99001`
+
+---
+
+## 💡 Tips for Admins
+   
+   *  Scaling Gear: Because the potions and cleave use percentage-based math, this module works perfectly for High-Stat / Fun Servers as well as Blizzlike servers.
+   
+   *  Performance: If you notice lag with 100+ players, lower the Diablo.Density.Chance to 10.
 
 ---
 
 ## 📜 Credits
 
-*   **WeebzSlayer**
+   *  WeebzSlayer
 
 ---
 
-**Made for AzerothCore.** ✨
-If you like this module, feel free to give it a ⭐ on GitHub.
+Made for AzerothCore. ✨ If you like this module, feel free to give it a ⭐ on GitHub.
 
 ---
-

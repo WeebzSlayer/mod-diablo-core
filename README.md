@@ -18,7 +18,7 @@ Transforms World of Warcraft into a fast-paced **Action RPG (ARPG)**. This modul
 *   **💥 Cleave System (Dynamic AOE):** 
     *   Every damage-dealing spell or strike has a **30% chance** to trigger a Cleave.
     *   Deals **50% of the original damage** to all enemies within **8 yards**.
-    *   *Visuals:* Uses in-game spell effects to signify the blast.
+    *   *Visuals :* Uses in-game spell effects to signify the blast.
 
 *   **🏃 ARPG Movement:** 
     *   Players receive a passive **+20% movement speed** boost automatically upon login.
@@ -44,11 +44,11 @@ Transforms World of Warcraft into a fast-paced **Action RPG (ARPG)**. This modul
 ### 🌌 Nephalem Rifts & Persephone
 
 *   **Persephone (The Rift Harbinger):** 
-    *   A custom vendor NPC (ID: `99000`) who sells the scaled Super Potions.
+    *   A custom vendor NPC (ID : `99000`) who sells the scaled Super Potions.
     *   **Rift System:** Talking to her allows players to enter a Nephalem Rift.
 
 *   **Rift Guardian:** 
-    *   Inside the Rift, players face waves of high-density mobs leading to the **Rift Guardian** (ID: `99001`).
+    *   Inside the Rift, players face waves of high-density mobs leading to the **Rift Guardian** (ID : `99001`).
     *   **Performance Safeguard:** Bosses and Rift mobs use `TEMPSUMMON_TIMED_DESPAWN_OUT_OF_COMBAT` to prevent entity hoarding.
 
 ---
@@ -86,9 +86,9 @@ Transforms World of Warcraft into a fast-paced **Action RPG (ARPG)**. This modul
 
 ## 🎮 Game Master Commands
 
-   *  Spawn the Rift NPC (Persephone): `.npc add 99000`
+   *  Spawn the Rift NPC (Persephone) : `.npc add 99000`
    
-   *  Manually Spawn a Rift Guardian: `.npc add 99001`
+   *  Manually Spawn a Rift Guardian : `.npc add 99001`
 
 ---
 
@@ -96,7 +96,7 @@ Transforms World of Warcraft into a fast-paced **Action RPG (ARPG)**. This modul
    
    *  Scaling Gear: Because the potions and cleave use percentage-based math, this module works perfectly for High-Stat / Fun Servers as well as Blizzlike servers.
    
-   *  Performance: If you notice lag with 100+ players, lower the Diablo.Density.Chance to 10.
+   *  Performance : If you notice lag with 100+ players, lower the Diablo.Density.Chance to 10.
 
 ---
 

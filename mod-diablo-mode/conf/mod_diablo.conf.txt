@@ -1,0 +1,43 @@
+[worldserver]
+
+########################################
+# Diablo Mode Configuration
+########################################
+
+# Enable the module
+Diablo.Enable = 1
+
+# Announce when a Champion spawns or a Rift is opened
+Diablo.Announce = 1
+
+# Density System
+# Chance to clone a monster on spawn (0.75 = 0.75% chance)
+# Note: Low value requested to protect server performance.
+Diablo.Density.Chance = 0.75
+
+# Champion System
+# Chance for a monster to become a Champion (Elite stats + loot)
+# Default: 1.0%
+Diablo.Champion.Chance = 1.0
+
+# Champion Stat Multipliers
+Diablo.Champion.HealthMod = 4.0
+Diablo.Champion.DamageMod = 2.0
+Diablo.Champion.SizeMod = 1.3
+
+# Rift System
+# Kills required to spawn the Rift Guardian
+Diablo.Rift.KillsRequired = 50
+# Entry ID of the Rift Guardian (Default: 10184 - Onyxia, just as a placeholder example)
+# You should pick a generic boss ID or create a custom one in SQL.
+Diablo.Rift.BossEntry = 10184
+
+# Gameplay Speed
+# Enable fast movement and attack speeds
+Diablo.Combat.FastPaced = 1
+
+# AoE Cleave System
+# Single target spells hit nearby enemies (Simulated AoE)
+Diablo.Combat.AoEify = 1
+
+########################################

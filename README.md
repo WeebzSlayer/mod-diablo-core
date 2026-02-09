@@ -1,5 +1,4 @@
 # 𝖒𝖔𝖉-𝖉𝖎𝖆𝖇𝖑𝖔-𝖈𝖔𝖗𝖊
----
 
 [![Platform: AzerothCore](https://img.shields.io/badge/Platform-AzerothCore-blue.svg)](https://www.azerothcore.org)
 [![License: GNU AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-red.svg)](https://github.com/azerothcore/azerothcore-wotlk/blob/master/LICENSE)

@@ -13,7 +13,7 @@ This module simulates a **Diablo-like experience** within World of Warcraft. It 
 ## 🛠️ Installation
 
 1. Place the `mod-diablo-mode` folder into your `azerothcore-wotlk/modules/` directory.
-2. Re-run **CMake**.
+2. Run **CMake**.
 3. **Compile** the server.
 4. Copy `conf/mod_diablo.conf` to your server's binary config directory (where `worldserver.conf` is) if the install step doesn't handle it automatically for your setup.
 

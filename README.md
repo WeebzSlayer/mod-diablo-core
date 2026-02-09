@@ -13,6 +13,10 @@
 
 ---
 
+## 🚧 Work In Progress (WIP)
+
+---
+
 ## ✨ Core Features
 
 ### ⚔️ Combat & Mechanics
@@ -57,7 +61,7 @@
 
 ## 🚀 Installation
 
-1. **Download the Module :**
+1. **Download the Module.**
 
 2. **Database Setup :**
    *  Apply the provided SQL files to your world database in acore.world.

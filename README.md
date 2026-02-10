@@ -66,7 +66,7 @@
 
 to really reproduce the Diablo like experience combined with the 
 
-**👿 [mod-diablo](https://github.com/WeebzSlayer/mod-diablo)**
+**👿 [mod-diablo-core](https://github.com/WeebzSlayer/mod-diablo)**
 
 ---
 

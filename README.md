@@ -83,7 +83,7 @@
 | Variable | Default | Description |
 | :--- | :---: | :--- |
 | `Diablo.Enable` | **1** | Toggle the entire module. |
-| `Diablo.MovementSpeed.Boost` | **1.2** | 1.2	(1.2 = 20% faster run speed.) |
+| `Diablo.MovementSpeed.Boost` | **1.2** | 1.2	(1.2 = 20% faster run speed) |
 | `Diablo.Density.Chance` | **25** | Chance (%) for mobs to clone. |
 | `Diablo.Champion.Chance` | **5** | Chance (%) Chance (%) for a mob to be a Champion. |
 | `Diablo.Cleave.Chance` | **30** | Chance (%) for damage to trigger AOE. |

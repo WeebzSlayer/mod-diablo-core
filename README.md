@@ -122,8 +122,10 @@ to really reproduce the Diablo like experience combined with the
 There's a few complementary stuffs that I would recommend to reproduce even more the Diablo like experience
 
    *  [Roth UI](https://www.wowinterface.com/downloads/download25958-RothUI-WOTLK) gives you the classic Diablo interface with the health red ball and the mana blue one.
+   
    *  [Diabolic UI](https://github.com/thExiled/DiabolicUI) is the same interface but inferior to the previous one imo.
-   *  [mod-random-enchants](https://github.com/azerothcore/mod-random-enchants) to increase the rng on the loots like in Diablo where it's difficult to get the meta gear         piece.
+   
+   *  [mod-random-enchants](https://github.com/azerothcore/mod-random-enchants) to increase the RNG on the loots like in Diablo where it's difficult to get the BIS
 
 
 
